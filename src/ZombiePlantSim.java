@@ -16,9 +16,11 @@ public class ZombiePlantSim {
             return treatmentsNeeded > 0;
         }
         public void treat(int treatment) {
-            if (isDangerous()) {
+            if (treatment > 0 {
                 if (treatment <= potency) {
-                    treatmentsNeeded--;
+                    if (isDangerous()) {
+                        treatmentsNeeded--;
+                    }
                 } else {
                     treatmentsNeeded++;
                 }
